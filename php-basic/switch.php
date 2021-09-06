@@ -13,7 +13,7 @@
             echo "Your fav colour is: Blue";
             break;
         default:
-            echo "Wrong colour you entered..!";
+            echo "you entered the Wrong colour..!";
     }
 
 ?>

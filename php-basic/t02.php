@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>PHP page</title>
-</head>
-
-<body>
-
-    <?php
+<?php
 
     echo strlen("Hello world");   // Output 11
     echo "<br>";
@@ -75,7 +66,4 @@
     echo "My name is : ".str;   //  Output: "My name is : Vinojan"
     echo "<br>";
 
-    ?>
-
-</body>
-</html>
+?>

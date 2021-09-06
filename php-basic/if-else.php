@@ -5,7 +5,7 @@
         echo "Have a nice day..!";
     }
     elseif ($num<40) {
-        echo "Great Day";
+        echo "Greatest Day";
     }
     else {
         echo "Bad Day";
