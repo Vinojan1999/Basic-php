@@ -5,6 +5,22 @@
 .error {
     color: red;
 }
+.form {
+    border-color: black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: gray;
+    height: 380px;
+    width: 400px;
+    padding-top: 10px;
+    margin-left: 35%;
+}
+.btn {
+    background-color: blue;
+    border-color: blue;
+    color: white;
+    border-radius: 7px;
+}
 </style>
 </head>
 <body>
@@ -49,28 +65,30 @@
 
     ?>
 
-    <h1>Form Validation - PHP</h1>
-    <p><span class="error"> * Required field</span></p>
-    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        Name: <input type="text" name="name">
-        <span class="error">* <?php echo $nameErr; ?></span>
-        <br><br>
-        Email: <input type="text" name="email">
-        <span class="error">* <?php echo $emailErr; ?></span>
-        <br><br>
-        Subject: <input type="text" name="sub">
-        <br><br>
-        Message: <textarea name="msg"></textarea>
-        <span class="error">* <?php echo $msgErr; ?></span>
-        <br><br>
-        Gender: 
-        <input type="radio" name="gender" value="male"> Male
-        <input type="radio" name="gender" value="female"> Female
-        <input type="radio" name="gender" value="other"> Other
-        <span class="error">* <?php echo $genderErr; ?></span>
-        <br><br>
-        <input type="submit" name="submit" value="Submit">
-    </form>
+    <div class="form">
+        <h1>Form Validation - PHP</h1>
+        <p><span class="error"> * Required field</span></p>
+        <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            Name: <input type="text" name="name">
+            <span class="error">* <?php echo $nameErr; ?></span>
+            <br><br>
+            Email: <input type="text" name="email">
+            <span class="error">* <?php echo $emailErr; ?></span>
+            <br><br>
+            Subject: <input type="text" name="sub">
+            <br><br>
+            Message: <textarea name="msg"></textarea>
+            <span class="error">* <?php echo $msgErr; ?></span>
+            <br><br>
+            Gender: 
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+            <span class="error">* <?php echo $genderErr; ?></span>
+            <br><br>
+            <input class="btn" type="submit" name="submit" value="Submit">
+        </form>
+    </div>
 
     <?php
     echo "<h2>Your Information:</h2>";
